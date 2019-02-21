@@ -1,0 +1,53 @@
+//Cores
+$preto: #1B191B;
+$branco:#fff;
+$preto-escuro:#2E2D2E;
+$laranja:#9D4608;
+//Fontes
+$fonte-1:'Roboto Condensed', sans-serif;
+$fonte-2:'Open Sans', sans-serif;
+
+@function em($pixel,$contexto:16){
+    @return $pixel / $contexto + em;
+}
+
+@mixin tipo-1($size) {
+    font-family: $fonte-1;
+    @if $size == 14 {
+        font-size: em(14);
+        line-height: em(23,14);
+    }@else if $size == 18 {
+         font-size: em(18);
+        line-height: em(30,18);
+    }
+}
+
+@mixin tipo-2($size){
+   font-family: $fonte-2;
+   @if $size == 24 {
+        font-size: em(24);
+        line-height: em(30,24);
+    }@else if $size == 36 {
+         font-size: em(36);
+        line-height: em(45,36);
+    }@else if $size == 48 {
+         font-size: em(48);
+        line-height: em(50,48);
+    }
+}
+
+@mixin box-shadow($shadow...){
+    -webkit-box-shadow:$shadow;
+    -moz-box-shadow:$shadow;
+    box-shadow:$shadow;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
