@@ -16,7 +16,7 @@ img{
 
 /* Cabeçalho */
 header{
-    background: $preto;
+    background:rgba(0, 0, 0, 0.7);
     height: 80px;
     position: fixed;
     top: 0;
@@ -99,8 +99,7 @@ header{
 .intro{
    background: url("../img/intro.jpg") no-repeat center;
    background-size: cover; 
-   height: 620px;
-   margin-top: 60px;
+   height: 665px;
    @include d(s){
       height: 90%;
       background: url("../img/intro-respon.jpg") no-repeat center;
