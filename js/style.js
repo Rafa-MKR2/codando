@@ -15,17 +15,24 @@ var servico = document.getElementById("titulo-servico");
 var portifolio = document.getElementById("portifolio");
 var orcamento = document.getElementById("orcamento");
 function topFunction() {
-    if(butEvent == 1){
-      window.scroll({top: servico.offsetTop-95, behavior: 'smooth'});
 
+let screenWidth = 111;
+let width = window.innerWidth || 
+        document.documentElement.clientWidth || 
+        document.body.clientWidth;
+
+if(width<760) screenWidth=95
+        if(butEvent == 1){
+
+      window.scroll({top: servico.offsetTop-screenWidth, behavior: 'smooth'});
 
     }
     if(butEvent == 2){    
-      window.scroll({top: portifolio.offsetTop-95, behavior: 'smooth'});
+      window.scroll({top: portifolio.offsetTop-screenWidth, behavior: 'smooth'});
 
 
 	}
     if(butEvent == 3){
-        window.scroll({top: orcamento.offsetTop-95, behavior: 'smooth'});
+        window.scroll({top: orcamento.offsetTop-screenWidth, behavior: 'smooth'});
 	}
 }
