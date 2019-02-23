@@ -17,7 +17,17 @@ img{
 /* Cabeçalho */
 /* classe para o js*/
 .ativar{
-    background: rgba(0,0,0, 0.6)
+    background: rgba(0,0,0, 0.6);
+    height: 10%;
+     @include d(s){
+      height: 6%;   
+   } 
+}
+.logoM{
+    margin-top: 20px !important;
+}
+.menuM{
+   margin-top: 4px !important;    
 }
 header{
     background:$preto;
@@ -28,10 +38,7 @@ header{
     z-index: 50;
     @include d(s){
       height: 60px;   
-   }
-   @include d(xs){
-      height: 60px;   
-   }    
+   }   
 }    
     
 
@@ -64,12 +71,7 @@ header{
      text-align: center;
      margin-top: 15px;
      
-   }
-   @include d(xs){
-     text-align: center;
-     margin-top: 15px;
-     width: calc(89.33333% - 20px);
-   }    
+   }   
 }
 .menu ul li{
     display: inline-block;
@@ -91,6 +93,7 @@ header{
     color: $branco;
     font-size: $fonte-1;
     @include tipo-1(18);
+    cursor: pointer;
     &:hover{
        color: $laranja; 
     }
@@ -119,11 +122,11 @@ header{
     width: 65%;
     height: 250px;
     text-align: center;
-    margin-top: 18%;
+    margin-top: 22%;
     margin-left: 17%;
     @include d(m){
       margin-left: 17%;
-      margin-top: 25%;    
+      margin-top: 35%;    
     }
     @include d(s){
       width: 90%;
@@ -138,8 +141,16 @@ header{
     color: $branco;
     text-transform: uppercase;
      @include d(s){
-      @include tipo-2(24);    
+      @include tipo-2(24);
+      display: none;
     }
+}
+.intro-call h1.mobile{
+   display: none;
+    @include d(s){
+      @include tipo-2(24);
+      display:block;
+  }    
 }
 .intro-call p{
   @include tipo-1(14);    
