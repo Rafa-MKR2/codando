@@ -15,8 +15,12 @@ img{
 }
 
 /* Cabeçalho */
+/* classe para o js*/
+.ativar{
+    background: rgba(0,0,0, 0.6)
+}
 header{
-    background:rgba(0, 0, 0, 0.7);
+    background:$preto;
     height: 80px;
     position: fixed;
     top: 0;
