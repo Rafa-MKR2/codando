@@ -11,13 +11,10 @@ document.addEventListener('DOMContentLoaded', function() {
   if(event>120) {
     document.querySelector('header').classList.add("ativar");
     document.querySelector('.logo').classList.add("logoM");  
-
-   document.querySelector('.menu').classList.add("menuM");
-      
+    document.querySelector('.menu').classList.add("menuM");
  }else{
-  document.querySelector('header').classList.remove("ativar")
+   document.querySelector('header').classList.remove("ativar")
    document.querySelector('.logo').classList.remove("logoM");  
-
    document.querySelector('.menu').classList.remove("menuM");
  }
 
@@ -34,12 +31,12 @@ var portifolio = document.getElementById("portifolio");
 var orcamento = document.getElementById("orcamento");
 function topFunction() {
 
-let screenWidth = 111;
+let screenWidth = 94.8;
 let width = window.innerWidth || 
         document.documentElement.clientWidth || 
         document.body.clientWidth;
 
-if(width<760) screenWidth=95
+if(width<760) screenWidth=100
 
 switch(scrollEvent){
   case 1:
@@ -49,7 +46,7 @@ switch(scrollEvent){
   case 2:
      window.scroll({top: portifolio.offsetTop-screenWidth, behavior: 'smooth'});
   break;
-
+  
   case 3:
   window.scroll({top: orcamento.offsetTop-screenWidth, behavior: 'smooth'});
   break;
