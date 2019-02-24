@@ -395,6 +395,7 @@ header {
   font-size: 1.125em;
   line-height: 1.66667em;
   cursor: pointer;
+  text-transform: uppercase;    
 }
 
 /* line 97, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
