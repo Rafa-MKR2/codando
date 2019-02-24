@@ -502,6 +502,7 @@ header {
   line-height: 1.66667em;
   text-transform: uppercase;
   transition: .5s;
+  cursor: pointer;
 }
 
 /* line 169, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
