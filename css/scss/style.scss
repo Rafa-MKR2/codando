@@ -490,7 +490,7 @@ form .btn-2{
   @include tipo-1(18);
   color: $branco;
   margin-bottom: 16px;
-  margin-top: 3px;    
+  margin-top: 0.5rem;    
 }
 .orca-img .dados:before{
   content: '';
@@ -501,6 +501,27 @@ form .btn-2{
    @include d(s){
       border-width: 3px;     
    }  
+}
+.orca-img .sobre{
+  @include tipo-1(18);
+  color: $branco;
+  margin-bottom: 16px;
+  margin-top: 3rem;    
+}
+.orca-img .sobre:before{
+  content: '';
+  display: block;
+  width: 15px;
+  height: 5px;
+  background: $branco;
+   @include d(s){
+      border-width: 3px;     
+   }  
+}
+.orca-img .sobre-info{
+   @include tipo-1(14);
+   font-family: $fonte-2;
+   color: $branco;
 }
 .orca-img .email{
    @include tipo-1(14);
