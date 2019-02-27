@@ -130,8 +130,9 @@ header{
     }
     @include d(s){
       width: 90%;
-      margin-left: 0;
-      margin-top: 25%;    
+      margin-left: 10px;
+      margin-top: 40%;
+      height: 230px;    
     }
     
 }
@@ -231,8 +232,8 @@ header{
      width: 38%;   
    }
    @include d(s){
-      margin-left: 25%;
-      width:61%;   
+      margin-left: 15%;
+      width:70%;   
    }
       
 }
@@ -262,8 +263,8 @@ header{
      margin-left: 10%;   
    }
   @include d(s){
-      margin-left: 25%;
-      width:61%;   
+       margin-left: 15%;
+      width:70%;    
    }    
 }
 .seo-info h3{
@@ -292,8 +293,8 @@ header{
      margin-left: 10%;   
    }
   @include d(s){
-      margin-left: 25%;
-      width:61%;   
+      margin-left: 15%;
+      width:70%;    
    }    
 }
 .respon-info h3{
@@ -359,7 +360,7 @@ header{
     }
 }
 .carousel a{
-    
+     margin-top: -5px;
      @include d(s){
         margin-top: 42px;
     }
