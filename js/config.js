@@ -1,4 +1,4 @@
-function myFunction() {
+function navScrollOpacity() {
     let event = window.scrollY
   if(event>120) {
     document.querySelector('header').classList.add("ativar");
