@@ -267,7 +267,7 @@ table {
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 270px;
+  height: 320px;
   -webkit-perspective: 500px;
   perspective: 500px;
   -webkit-transform-style: preserve-3d;
@@ -328,11 +328,11 @@ table {
 /* line 54, C:/Users/DANIEL/Desktop/Codando/css/scss/_animations.scss */
 .carousel .carousel-item {
   visibility: hidden;
-  width: 380px;
+  width: 450px;
   height: 220px;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -75;
 }
 
 /* line 63, C:/Users/DANIEL/Desktop/Codando/css/scss/_animations.scss */
@@ -1022,11 +1022,6 @@ header {
   }
 }
 
-/* line 361, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
-.carousel a {
-  margin-top: 15px;
-}
-
 @media screen and (max-width: 759px) {
   /* line 361, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .carousel a {
@@ -1036,7 +1031,7 @@ header {
 
 /* line 367, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .carousel a img:hover {
-  transform: scale(1.4);
+  transform: scale(1.5);
 }
 
 @media screen and (max-width: 759px) {

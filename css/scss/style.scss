@@ -359,13 +359,13 @@ header{
     }
 }
 .carousel a{
-    margin-top: 15px;
+    
      @include d(s){
         margin-top: 42px;
     }
 }
 .carousel a img:hover{
-   transform: scale(1.4);
+   transform: scale(1.5);
    @include d(s){
         transform: none;
    }    
