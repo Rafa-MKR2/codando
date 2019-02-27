@@ -451,6 +451,9 @@ form input{
     padding-left: 10px;
     @include tipo-1(14);
     outline: none;
+    @include d(s){
+      border-width: 3px; 
+    }
 }
 form textarea{
     width: 100%;
@@ -462,6 +465,9 @@ form textarea{
     padding-left: 10px;
     @include tipo-1(14);
     outline: none;
+    @include d(s){
+      border-width: 3px; 
+    }
 }
 form .btn-2{
     background: none;
@@ -503,7 +509,7 @@ form .btn-2{
   height: 5px;
   background: $branco;
    @include d(s){
-      border-width: 3px;     
+      height: 3px;     
    }  
 }
 .orca-img .sobre{
@@ -519,7 +525,7 @@ form .btn-2{
   height: 5px;
   background: $branco;
    @include d(s){
-      border-width: 3px;     
+      height: 3px;     
    }  
 }
 .orca-img .sobre-info{
@@ -569,7 +575,10 @@ form .btn-2{
             height: 5px;
             width: 250px;
             background:$branco;
-            margin: 8px auto; 
+            margin: 8px auto;
+            @include d(s){
+             height: 3px;  
+           }
         }    
     }    
 }
