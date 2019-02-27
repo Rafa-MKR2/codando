@@ -501,9 +501,10 @@ header {
   line-height: 1.66667em;
   text-transform: uppercase;
   transition: .5s;
+  cursor: pointer;
 }
 
-/* line 169, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 170, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .btn:hover {
   border-color: #fff;
   color: #fff;
@@ -522,7 +523,7 @@ header {
 }
 
 /*Serviços*/
-/* line 182, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 183, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .servicos h2 {
   font-family: "Open Sans", sans-serif;
   font-size: 3em;
@@ -535,7 +536,7 @@ header {
   text-transform: uppercase;
 }
 
-/* line 190, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 191, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .servicos h2::after, .servicos h2::before {
   content: '';
   display: block;
@@ -546,7 +547,7 @@ header {
 }
 
 @media screen and (min-width: 760px) and (max-width: 1199px) {
-  /* line 182, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 183, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .servicos h2 {
     font-family: "Open Sans", sans-serif;
     font-size: 2.25em;
@@ -555,13 +556,13 @@ header {
 }
 
 @media screen and (max-width: 759px) {
-  /* line 182, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 183, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .servicos h2 {
     font-family: "Open Sans", sans-serif;
     font-size: 1.5em;
     line-height: 1.25em;
   }
-  /* line 203, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 204, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .servicos h2::after, .servicos h2::before {
     width: 150px;
     height: 3px;
@@ -569,40 +570,40 @@ header {
 }
 
 /*wordpress*/
-/* line 210, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 211, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .word {
   background: #1B191B;
   padding: 26px 0;
 }
 
-/* line 214, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 215, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .icones {
   margin-left: 20%;
   width: 35%;
 }
 
 @media screen and (min-width: 760px) and (max-width: 1199px) {
-  /* line 214, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 215, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .icones {
     margin-left: 70px;
   }
 }
 
 @media screen and (max-width: 759px) {
-  /* line 214, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 215, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .icones {
     margin-left: 25%;
     margin-bottom: 30px;
   }
 }
 
-/* line 226, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 227, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .word-info {
   width: 30%;
 }
 
 @media screen and (min-width: 760px) and (max-width: 1199px) {
-  /* line 226, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 227, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .word-info {
     margin-left: 10%;
     width: 38%;
@@ -610,14 +611,14 @@ header {
 }
 
 @media screen and (max-width: 759px) {
-  /* line 226, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 227, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .word-info {
     margin-left: 25%;
     width: 61%;
   }
 }
 
-/* line 238, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 239, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .word-info h3 {
   font-family: "Open Sans", sans-serif;
   font-size: 1.5em;
@@ -629,13 +630,13 @@ header {
 }
 
 @media screen and (max-width: 759px) {
-  /* line 238, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 239, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .word-info h3 {
     font-family: "Open Sans", sans-serif;
   }
 }
 
-/* line 248, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 249, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .word-info p {
   color: #fff;
   font-family: "Open Sans", sans-serif;
@@ -643,32 +644,32 @@ header {
 }
 
 /*SEO*/
-/* line 255, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 256, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .seo {
   padding: 26px 0;
 }
 
-/* line 258, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 259, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .seo-info {
   width: 30%;
 }
 
 @media screen and (min-width: 760px) and (max-width: 1199px) {
-  /* line 258, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 259, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .seo-info {
     margin-left: 10%;
   }
 }
 
 @media screen and (max-width: 759px) {
-  /* line 258, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 259, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .seo-info {
     margin-left: 25%;
     width: 61%;
   }
 }
 
-/* line 268, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 269, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .seo-info h3 {
   font-family: "Open Sans", sans-serif;
   font-size: 1.5em;
@@ -680,13 +681,13 @@ header {
 }
 
 @media screen and (max-width: 759px) {
-  /* line 268, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 269, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .seo-info h3 {
     font-family: "Open Sans", sans-serif;
   }
 }
 
-/* line 278, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 279, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .seo-info p {
   color: #2E2D2E;
   font-family: "Open Sans", sans-serif;
@@ -694,33 +695,33 @@ header {
 }
 
 /*Responsivo*/
-/* line 284, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 285, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .respon {
   background: #1B191B;
   padding: 26px 0;
 }
 
-/* line 288, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 289, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .respon-info {
   width: 30%;
 }
 
 @media screen and (min-width: 760px) and (max-width: 1199px) {
-  /* line 288, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 289, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .respon-info {
     margin-left: 10%;
   }
 }
 
 @media screen and (max-width: 759px) {
-  /* line 288, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 289, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .respon-info {
     margin-left: 25%;
     width: 61%;
   }
 }
 
-/* line 298, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 299, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .respon-info h3 {
   font-family: "Open Sans", sans-serif;
   font-size: 1.5em;
@@ -731,7 +732,7 @@ header {
   margin-bottom: 16px;
 }
 
-/* line 308, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 309, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .respon-info p {
   color: #fff;
   font-family: "Open Sans", sans-serif;
@@ -739,7 +740,7 @@ header {
 }
 
 /*Portifólio*/
-/* line 314, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 315, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .portifolio h2 {
   font-family: "Open Sans", sans-serif;
   font-size: 3em;
@@ -752,7 +753,7 @@ header {
   text-transform: uppercase;
 }
 
-/* line 322, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 323, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .portifolio h2::after, .portifolio h2::before {
   content: '';
   display: block;
@@ -763,7 +764,7 @@ header {
 }
 
 @media screen and (min-width: 760px) and (max-width: 1199px) {
-  /* line 314, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 315, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .portifolio h2 {
     font-family: "Open Sans", sans-serif;
     font-size: 2.25em;
@@ -772,33 +773,33 @@ header {
 }
 
 @media screen and (max-width: 759px) {
-  /* line 314, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 315, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .portifolio h2 {
     font-family: "Open Sans", sans-serif;
     font-size: 1.5em;
     line-height: 1.25em;
   }
-  /* line 335, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 336, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .portifolio h2::after, .portifolio h2::before {
     width: 100px;
     height: 3px;
   }
 }
 
-/* line 341, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 342, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .portifolio-itens {
   border-top: 5px solid #1B191B;
   border-bottom: 5px solid #1B191B;
 }
 
 @media screen and (max-width: 759px) {
-  /* line 341, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 342, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .portifolio-itens {
     border-width: 3px;
   }
 }
 
-/* line 349, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 350, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .img-porti {
   margin-top: 2%;
   margin-bottom: 2%;
@@ -806,7 +807,7 @@ header {
 }
 
 @media screen and (max-width: 759px) {
-  /* line 349, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 350, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .img-porti {
     float: left;
     margin-left: 5%;
@@ -815,7 +816,7 @@ header {
   }
 }
 
-/* line 360, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 361, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .img-porti-1 {
   margin-top: 2%;
   margin-bottom: 2%;
@@ -824,7 +825,7 @@ header {
 }
 
 @media screen and (max-width: 759px) {
-  /* line 360, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 361, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .img-porti-1 {
     margin-left: 20px;
     float: left;
@@ -833,20 +834,20 @@ header {
   }
 }
 
-/* line 372, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 373, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .portifolio-itens img:hover {
   transform: scale(1.4);
   width: 400px;
 }
 
 /*orçamento*/
-/* line 377, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 378, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .orca-itens {
   background: #1B191B;
   height: auto;
 }
 
-/* line 382, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 383, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .orcamento h2 {
   font-family: "Open Sans", sans-serif;
   font-size: 3em;
@@ -859,7 +860,7 @@ header {
   text-transform: uppercase;
 }
 
-/* line 390, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 391, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .orcamento h2::after, .orcamento h2::before {
   content: '';
   display: block;
@@ -870,7 +871,7 @@ header {
 }
 
 @media screen and (min-width: 760px) and (max-width: 1199px) {
-  /* line 382, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 383, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .orcamento h2 {
     font-family: "Open Sans", sans-serif;
     font-size: 2.25em;
@@ -879,7 +880,7 @@ header {
 }
 
 @media screen and (max-width: 759px) {
-  /* line 382, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 383, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .orcamento h2 {
     font-family: "Open Sans", sans-serif;
     font-size: 2.25em;
@@ -888,20 +889,20 @@ header {
 }
 
 @media screen and (max-width: 759px) and (max-width: 759px) {
-  /* line 382, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 383, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .orcamento h2 {
     font-family: "Open Sans", sans-serif;
     font-size: 1.5em;
     line-height: 1.25em;
   }
-  /* line 405, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 406, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .orcamento h2::after, .orcamento h2::before {
     width: 100px;
     height: 3px;
   }
 }
 
-/* line 412, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 413, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .orca-itens h3 {
   font-family: "Open Sans", sans-serif;
   font-size: 1.5em;
@@ -915,14 +916,14 @@ header {
   text-transform: uppercase;
 }
 
-/* line 422, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 423, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .orca-form {
   margin-right: 10%;
   width: 45%;
 }
 
 @media screen and (min-width: 760px) and (max-width: 1199px) {
-  /* line 422, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 423, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .orca-form {
     margin-right: 9%;
     width: 48%;
@@ -930,14 +931,14 @@ header {
 }
 
 @media screen and (max-width: 759px) {
-  /* line 422, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 423, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .orca-form {
     margin-right: 0;
     width: 100%;
   }
 }
 
-/* line 434, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 435, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 form label {
   display: block;
   color: #fff;
@@ -947,7 +948,7 @@ form label {
   margin-bottom: 4px;
 }
 
-/* line 440, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 441, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 form input {
   width: 100%;
   height: 45px;
@@ -962,7 +963,7 @@ form input {
   outline: none;
 }
 
-/* line 451, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 452, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 form textarea {
   width: 100%;
   height: 180px;
@@ -977,7 +978,7 @@ form textarea {
   outline: none;
 }
 
-/* line 462, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 463, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 form .btn-2 {
   background: none;
   border: 5px solid #9D4608;
@@ -993,7 +994,7 @@ form .btn-2 {
   cursor: pointer;
 }
 
-/* line 473, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 474, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 form .btn-2:hover {
   border-color: #fff;
   color: #fff;
@@ -1001,7 +1002,7 @@ form .btn-2:hover {
 }
 
 @media screen and (max-width: 759px) {
-  /* line 462, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 463, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   form .btn-2 {
     border-width: 3px;
     padding: 3px 20px;
@@ -1009,14 +1010,14 @@ form .btn-2:hover {
 }
 
 @media screen and (max-width: 759px) {
-  /* line 483, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 484, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .orca-img {
     margin-left: 0;
     margin-right: 0;
   }
 }
 
-/* line 489, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 490, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .orca-img .dados {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.125em;
@@ -1026,7 +1027,7 @@ form .btn-2:hover {
   margin-top: 0.5rem;
 }
 
-/* line 495, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 496, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .orca-img .dados:before {
   content: '';
   display: block;
@@ -1036,13 +1037,13 @@ form .btn-2:hover {
 }
 
 @media screen and (max-width: 759px) {
-  /* line 495, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 496, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .orca-img .dados:before {
     border-width: 3px;
   }
 }
 
-/* line 505, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 506, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .orca-img .sobre {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.125em;
@@ -1052,7 +1053,7 @@ form .btn-2:hover {
   margin-top: 3rem;
 }
 
-/* line 511, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 512, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .orca-img .sobre:before {
   content: '';
   display: block;
@@ -1062,13 +1063,13 @@ form .btn-2:hover {
 }
 
 @media screen and (max-width: 759px) {
-  /* line 511, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 512, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .orca-img .sobre:before {
     border-width: 3px;
   }
 }
 
-/* line 521, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 522, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .orca-img .sobre-info {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 0.875em;
@@ -1077,7 +1078,7 @@ form .btn-2:hover {
   color: #fff;
 }
 
-/* line 526, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 527, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .orca-img .email {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 0.875em;
@@ -1086,7 +1087,7 @@ form .btn-2:hover {
   color: #fff;
 }
 
-/* line 532, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 533, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .orca-img .sep {
   width: 385px;
   height: 5px;
@@ -1097,33 +1098,33 @@ form .btn-2:hover {
 }
 
 @media screen and (min-width: 760px) and (max-width: 1199px) {
-  /* line 532, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 533, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .orca-img .sep {
     width: 300px;
   }
 }
 
 @media screen and (max-width: 759px) {
-  /* line 532, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 533, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .orca-img .sep {
     width: 90%;
   }
 }
 
-/* line 546, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 547, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .orca-img img {
   height: 315px;
 }
 
 @media screen and (max-width: 759px) {
-  /* line 546, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 547, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .orca-img img {
     margin-bottom: 32px;
   }
 }
 
 /*Quebra*/
-/* line 553, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 554, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .quebra {
   background: url("../img/footer.jpg") no-repeat center;
   background-size: cover;
@@ -1134,7 +1135,7 @@ form .btn-2:hover {
 }
 
 @media screen and (min-width: 760px) and (max-width: 1199px) {
-  /* line 553, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 554, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .quebra {
     height: 400px;
     background-attachment: local;
@@ -1142,14 +1143,14 @@ form .btn-2:hover {
 }
 
 @media screen and (max-width: 759px) {
-  /* line 553, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 554, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .quebra {
     height: 300px;
     background-attachment: local;
   }
 }
 
-/* line 568, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 569, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .quebra p {
   font-family: "Open Sans", sans-serif;
   font-size: 1.5em;
@@ -1161,20 +1162,20 @@ form .btn-2:hover {
 }
 
 @media screen and (min-width: 760px) and (max-width: 1199px) {
-  /* line 568, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 569, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .quebra p {
     margin-top: 160px;
   }
 }
 
 @media screen and (max-width: 759px) {
-  /* line 568, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+  /* line 569, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
   .quebra p {
     margin-top: 110px;
   }
 }
 
-/* line 580, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 581, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .quebra p::before, .quebra p::after {
   content: '';
   display: block;
@@ -1185,14 +1186,14 @@ form .btn-2:hover {
 }
 
 /*footer*/
-/* line 591, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 592, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 footer {
   background: #1B191B;
   height: 100px;
   text-align: center;
 }
 
-/* line 596, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
+/* line 597, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 footer p {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.125em;

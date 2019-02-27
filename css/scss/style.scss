@@ -166,6 +166,7 @@ header{
     @include tipo-1(18);
     text-transform: uppercase;
     transition: .5s;
+    cursor: pointer;
     &:hover{
       border-color: $branco;
       color: $branco;
