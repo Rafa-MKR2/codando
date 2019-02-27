@@ -8,17 +8,27 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/admin.css">
-
+   <!--Import Google Icon Font-->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
     <title>Admin!</title>
   </head>
   <body>
-
+   
 <div class="container">
+  <div id="perfil"></div>
 
-        <form onsubmit="admin.login(event)" id="formLogin" class="form-signin">
+
+  <main id="main" role="main" class="container scale-transition">
+    <div id="orcamento"  style="position:fixed;" > </div>
+
+  </main>
+
+        <form onsubmit="admin.login(event)" id="formLogin" class="form-signin  scale-transition">
                 <img  style="margin-left:40%;" src="img/user.png" alt="" width="72" height="72">
                 <h1 style="margin-left:20%;" class="h3 mb-3 font-weight-normal">Codando Login</h1>
                <div id="alert"></div>
+
                 <label for="email" class="sr-only">E-mail</label>
                 <input type="email" id="email" class="form-control" placeholder="E-mail" required autofocus>
                 <br>
@@ -29,34 +39,36 @@
                 <p class="mt-5 mb-3 text-muted">&copy;Codando 2019</p>
               </form>
 <br>
-  
-<main role="main" class="container">
-  <div id="perfil"></div>
-  <div id="orcamento"></div>
-</main>
-          
+     
+
+
+
 
 </div>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- JavaScript Compactado do Matrialize-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
     <!-- firebase --> 
     <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
    
-    <script src="js/helpers/DateHelper.js"></script>    
-    <script src="js/views/view.js"></script>    
+    <script src="js/helpers/DateHelper.js"></script>  
+  
+    <script src="js/models/Firebase.js"></script>    
+    <script src="js/models/Orcamento.js"></script>    
+
+    <script src="js/views/view.js"></script>  
     <script src="js/views/MensagemSuccess.js"></script>    
     <script src="js/views/MensagemErro.js"></script>    
     <script src="js/views/PerfilView.js"></script>    
+    <script src="js/views/Orcamento.js"></script>    
 
-    <script src="js/models/Firebase.js"></script>    
     <script src="js/admin.js"></script>
 
 <script>
-    var admin = new Admin()
+    var admin = new Admin();
     </script>
   </body>
 </html>

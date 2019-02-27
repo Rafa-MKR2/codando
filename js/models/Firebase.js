@@ -28,6 +28,9 @@ class Firebase{
             case "auth/wrong-password":
             msg= "senha incorreta!"
             break;
+            case "auth/too-many-requests":
+            msg='Você excedeu limites de tentativas, tente novamente mais tarde!'
+            break;
             case "":
             msg= "Houve um problema!"
             break;
