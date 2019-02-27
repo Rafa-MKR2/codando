@@ -1,7 +1,7 @@
 @import 'reset';
 @import 'grid';
 @import 'variaveis-e-mixins';
-
+@import 'animations';
 html, body {
     overflow-x: hidden;
 }
@@ -358,21 +358,23 @@ header{
          margin-bottom: 4%;      
     }
 }
-.img-porti-1{
-    margin-top: 2%;
-    margin-bottom: 2%;
-    width: 40%;
-    margin-left: 10%;
-    @include d(s){
-         margin-left: 20px;
-         float: left;
-         margin-top: 4%;
-         margin-bottom: 4%;    
+.carousel a{
+    margin-top: 15px;
+     @include d(s){
+        margin-top: 42px;
     }
 }
-.portifolio-itens img:hover{
-    transform:scale(1.4);
-    width: 400px;
+.carousel a img:hover{
+   transform: scale(1.4);
+   @include d(s){
+        transform: none;
+   }    
+}
+
+.carousel .carousel-item{
+  @include d(s){
+    width: 260px;
+  }
 }
 /*orçamento*/
 .orca-itens{
@@ -523,6 +525,7 @@ form .btn-2{
    @include tipo-1(14);
    font-family: $fonte-2;
    color: $branco;
+   margin-bottom: 2rem;    
 }
 .orca-img .email{
    @include tipo-1(14);
@@ -530,26 +533,7 @@ form .btn-2{
    color: $branco;
     
 }
-.orca-img .sep{
-    width: 385px;
-    height: 5px;
-    background: $branco;
-    margin-top: 54px;
-    margin-bottom: 54px;
-    margin-left: 0;
-    @include d(m){
-      width: 300px;   
-    }
-    @include d(s){
-      width: 90%;   
-   }
-}
-.orca-img img{
-  height: 315px;
-   @include d(s){
-      margin-bottom: 32px;   
-   }    
-}
+
 /*Quebra*/
 .quebra{
   background: url("../img/footer.jpg") no-repeat center;
@@ -600,11 +584,4 @@ footer p{
      text-transform: uppercase;
     margin-top: 40px;
 }
-
-
-
-
-
-
-
 

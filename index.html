@@ -5,12 +5,12 @@
      <meta name="viewport" content="width=device-width, initial-scale=1">   
      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Condensed:400,700" rel="stylesheet">
      <link href="css/style.css" rel="stylesheet" type="text/css"/> 
- 
      <link href="css/animations.css" rel="stylesheet" type="text/css"/> 
+
+     <script src="js/config.js"></script>
     </head>
 
    <body onscroll="myFunction()">
-    
        <header>
         <div class="container">
            <div class="grid-5 logo">
@@ -97,7 +97,7 @@
        <div class="portifolio-itens">
            
         <div class="carousel">
-          <a class="carousel-item" href="https://dani3434.github.io/site-do-john/"><img src="img/portfolio.png"></a>
+          <a class="carousel-item gam" href="https://dani3434.github.io/site-do-john/"><img src="img/portfolio.png"></a>
           <a class="carousel-item" href="https://dani3434.github.io/flex-blog/"><img src="img/portfolio-2.png"></a>
           <a class="carousel-item" href="https://rafa-mkr2.github.io/Sideon/"><img src="img/portfolio-3.png"></a>
           </div>
@@ -116,13 +116,13 @@
           <h3>Solicite seu orçamento aqui</h3>            
           <div class="grid-7 orca-form">
 
-            <form>
+            <form onsubmit="index.formOcamento(event)">
               <label for="nome">Nome</label>
               <input type="text" id="nome" name="nome" required>
               <label for="email">E-Mail</label>
               <input type="email" id="email" name="email" required>
               <label for="tele">Telefone</label>
-              <input type="tel" id="tele" name="tele" required>
+              <input type="tel" id="tel" name="tele" required>
 
              <label for="mensagem">Mensagem</label>
              <textarea name="mensagem" id="mensagem"></textarea>    
@@ -134,10 +134,12 @@
 
           <div class="grid-5 orca-img">
               <p class="dados">Dados</p>
-              <p class="email">codando@gmail.com</p>
-              <p class="email">(85) 8556-7209 ou (85) 98720-6220</p>
+              <p class="email">codando23@gmail.com</p>
+              <p class="email">(85) 8556-7209 / (85) 98720-6220</p>
               <p class="sobre">Sobre</p>
-              <p class="sobre-info">A empresa <strong>Codando</strong>é composto por 2    integrantes que tem o conhecimento em criação de sites institucionais como sites para academia,restaurante e etc.Fazemos também aplicativos mobile com a mesma pegade dos sites ainda não trabalhamos com e-commerce.seu site ou aplicativo vai ter a cara da sua empresa,pois trabalhamos com ui design a aparência importa tanto quanto na vida real então venha fazer seu site ou aplicativo com a gente.</p>
+
+              <p class="sobre-info">A empresa <strong>Codando</strong> é composto por 2 integrantes que tem o conhecimento em criação de sites institucionais como sites para academia,restaurante e etc.Fazemos também aplicativos mobile com a mesma pegade dos sites ainda não trabalhamos com e-commerce.seu site ou aplicativo vai ter a cara da sua empresa,pois trabalhamos com ui design a aparência importa tanto quanto na vida real então venha fazer seu site ou aplicativo com a gente.</p>
+
            </div>    
        </div>
           
@@ -163,7 +165,12 @@
     
     <!-- JavaScript Compactado do Matrialize-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    
-   <script src="js/style.js"></script>
+   <!-- firebase --> 
+   <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+   
+    <script src="js/models/Firebase.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/style.js"></script>
+
    </body>
 </html> 

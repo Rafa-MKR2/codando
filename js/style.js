@@ -1,35 +1,26 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelector('.carousel');
+var index = new Index();
+var get = document.querySelector.bind(document)
+
+document.addEventListener('DOMContentLoaded', ()=> {
+    var elems = get('.carousel');
      M.Carousel.init(elems, 5);
+
   });
 
 
+get("#menu1").addEventListener('click', ()=>{scrollEvent = 'servico';   scrollMenu();});
+get("#menu2").addEventListener('click', ()=>{scrollEvent = 'portifolio'; scrollMenu();})
+get("#menu3").addEventListener('click', ()=>{scrollEvent = 'orcamento'; scrollMenu();})
+get("#orcament-btn").addEventListener('click',()=>{scrollEvent = 'orcamento'; scrollMenu();})
+
+var scrollEvent = '';
+var servico = get("#titulo-servico");
+var portifolio = get("#portifolio");
+var orcamento = get("#orcamento");
 
 
-  function myFunction() {
-    let event = window.scrollY
-  if(event>120) {
-    document.querySelector('header').classList.add("ativar");
-    document.querySelector('.logo').classList.add("logoM");  
-    document.querySelector('.menu').classList.add("menuM");
- }else{
-   document.querySelector('header').classList.remove("ativar")
-   document.querySelector('.logo').classList.remove("logoM");  
-   document.querySelector('.menu').classList.remove("menuM");
- }
 
-}
-
-document.getElementById("menu1").addEventListener('click', function(){scrollEvent = 1;topFunction();});
-document.getElementById("menu2").addEventListener('click', function(){scrollEvent = 2; topFunction();})
-document.getElementById("menu3").addEventListener('click', function(){scrollEvent = 3; topFunction();})
-document.getElementById("orcament-btn").addEventListener('click', function(){scrollEvent = 3; topFunction();})
-
-var scrollEvent = 0;
-var servico = document.getElementById("titulo-servico");
-var portifolio = document.getElementById("portifolio");
-var orcamento = document.getElementById("orcamento");
-function topFunction() {
+function scrollMenu() {
 
 let screenWidth = 94.8;
 let width = window.innerWidth || 
@@ -39,19 +30,19 @@ let width = window.innerWidth ||
 if(width<760) screenWidth=100
 
 switch(scrollEvent){
-  case 1:
+  case 'servico':
   window.scroll({top: servico.offsetTop-screenWidth, behavior: 'smooth'});
   break;
 
-  case 2:
+  case 'portifolio':
      window.scroll({top: portifolio.offsetTop-screenWidth, behavior: 'smooth'});
   break;
   
-  case 3:
+  case 'orcamento':
   window.scroll({top: orcamento.offsetTop-screenWidth, behavior: 'smooth'});
   break;
 
-  case false:
+  case '':
   window.scrollTo(0,0);
   break;
 }
