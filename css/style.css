@@ -806,7 +806,7 @@ header {
 
 /* line 228, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .word-info {
-  width: 30%;
+  width: 35%;
 }
 
 @media screen and (min-width: 760px) and (max-width: 1199px) {
@@ -858,7 +858,7 @@ header {
 
 /* line 260, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .seo-info {
-  width: 30%;
+  width: 35%;
 }
 
 @media screen and (min-width: 760px) and (max-width: 1199px) {
@@ -910,7 +910,7 @@ header {
 
 /* line 290, C:/Users/DANIEL/Desktop/Codando/css/scss/style.scss */
 .respon-info {
-  width: 30%;
+  width: 35%;
 }
 
 @media screen and (min-width: 760px) and (max-width: 1199px) {
