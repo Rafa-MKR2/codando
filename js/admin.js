@@ -7,7 +7,7 @@ class Admin{
         this._senha = $('#password');
         this._form = $('#formLogin');
         this._timeView = $('#time')
-        this.lista = []
+        this._lista = []
 
         this._mainStatus = $('#main')
 
@@ -17,16 +17,12 @@ class Admin{
         this._perfil = new PerfilView($('#perfil'))
         this._orcamento = new Orcamento($('#orcamento'))
 
-
-
         // configurações
         this._firebase = new Firebase();
         firebase.initializeApp(this._firebase.config);
         this._info = ''
-        this._db = firebase.database().ref('orcamentos/');
+        this._db = firebase.database();
 
-
-        
     }
 
  
@@ -38,18 +34,24 @@ class Admin{
             .then(date=> {
                 this._form.classList.add('scale-out')
                 this._mainStatus.classList.add('scale-in')
-
                 this._perfil.update(date.user);
-  
-                this.orcamentoLoad();
 
-              setTimeout(()=>{ 
+                setInterval(()=>{
+                    let update = this.orcamentoLoad();
 
-                    return this._orcamento.update(this.lista.reverse());
-           
-                  
-                },1000)
-
+                    if(update.length===this._lista.length){
+                        return;
+                    }
+                    else{
+                        this._lista = [].concat(this.orcamentoLoad());
+                        this._orcamento.update(this._lista)
+                    }
+                    if(update.length==0) {
+                        this._orcamento.update(this._lista)
+                    }
+                    
+                },2000)
+         
             })
             .catch(error=>{
               
@@ -69,9 +71,10 @@ class Admin{
 
    
     orcamentoLoad(){
-       
-           return this._db.on('child_added', snapshot=> 
-           this.lista.push(snapshot.val()))
-     
-    }
+        let lista = [];
+        this._db.ref('orcamentos/').on('child_added', snapshot=> 
+        lista.push(snapshot.val())); 
+
+        return lista.reverse();
+        }
 }
