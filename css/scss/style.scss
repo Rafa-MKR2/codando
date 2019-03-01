@@ -82,11 +82,8 @@ header{
      margin: 0;
      margin-right: 5px;    
      margin-bottom: 40px;    
-   } 
-    @include d(xs){
-        margin-left: 8px;
-        margin-top: 0px;  
-   } 
+   }
+       
 }
 .menu ul a{
    text-decoration: none;
@@ -94,11 +91,13 @@ header{
     font-size: $fonte-1;
     @include tipo-1(18);
     cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
     &:hover{
        color: $laranja; 
     }
-    @include d(xs){
-     @include tipo-1(18);  
+    @include d(m){
+     letter-spacing: normal;      
    } 
 }
 
@@ -161,13 +160,14 @@ header{
 }
 .btn{
     border: 5px solid $laranja;
-    padding: 10px 20px;
+    padding: 10px 15px;
     color: $laranja;
     text-decoration: none;
     @include tipo-1(18);
     text-transform: uppercase;
     transition: .5s;
     cursor: pointer;
+    letter-spacing: 0.1em;
     &:hover{
       border-color: $branco;
       color: $branco;
@@ -472,7 +472,7 @@ form textarea{
 form .btn-2{
     background: none;
     border: 5px solid $laranja;
-    padding: 5px 30px;
+    padding: 5px 20px;
     color: $laranja;
     text-decoration: none;
     @include tipo-1(18);
@@ -480,6 +480,7 @@ form .btn-2{
     transition: .5s;
     margin-bottom: 32px;
     cursor: pointer;
+    letter-spacing: 0.1em;
     &:hover{
       border-color: $branco;
       color: $branco;
