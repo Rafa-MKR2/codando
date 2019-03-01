@@ -22,7 +22,7 @@ class Admin{
         firebase.initializeApp(this._firebase.config);
         this._info = ''
         this._db = firebase.database();
-
+      
     }
 
  
