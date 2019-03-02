@@ -24,6 +24,13 @@ class Index{
             data: new Date().getTime(),
             mensagem: this._mensagem.value
           }
+    
+        return this._enviarDados(orcamento)
+
+    }
+
+
+    _enviarDados(orcamento){  
       return  firebase.database().ref('orcamentos/').push(orcamento)
       .then(()=>  {
         M.toast({
@@ -34,16 +41,11 @@ class Index{
             completeCallback: setTimeout(()=> 
              M.toast({html:'<p>Obrigado(a) por escolher nossos serviços</p>', displayLength:20000}),9000)
         })
-
         this._limpaForm()
         })
       .catch(()=>  M.toast({html: 'Não foi posível agendar seu orçameento!'}) )
 
-      
-
     }
-
-
 
     _limpaForm(){
        this._nome.value =''

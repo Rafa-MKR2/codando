@@ -19,9 +19,23 @@
   <div id="perfil"></div>
 
 
-  <main id="main" role="main" class="container scale-transition">
-    <div id="orcamento"  style="position:fixed;" > </div>
-
+  <main id="main" role="main" class="container scale-transition scale-out">
+    <div id="orcamento"> 
+      <!-- Loading provisorio -->
+      <div class="preloader-wrapper big active" style="margin-left:40%;">
+        <div class="spinner-layer spinner-blue-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Fim do loading -->
+    </div>
+    
   </main>
 
         <form onsubmit="admin.login(event)" id="formLogin" class="form-signin  scale-transition">

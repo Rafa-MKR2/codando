@@ -13,7 +13,8 @@ class PerfilView extends View{
         <div class="lh-100">
           <h6 class="mb-0 text-purple lh-100">${model.displayName}</h6>
           <small>ultímo acesso: ${DateHelper.gravaData(new Date(model.metadata.lastSignInTime)) }</small>
-        </div>
+          </div>
+
       </div>`;
 	}
 

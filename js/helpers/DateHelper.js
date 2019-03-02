@@ -24,11 +24,13 @@ class DateHelper{
        ${data.getMinutes()<10? '0'+data.getMinutes():data.getMinutes()}`,
 
        dataFormatada = `${data.getDate()<10? '0'+data.getDate():data.getDate()}
-                        /${data.getMonth()+1}:${data.getFullYear()}`
+                        /${data.getMonth()+1<10? '0'+data.getMonth():data.getMonth()+1}
+                        /${data.getFullYear()}`;
 
 
         if(data.getDate()===new Date().getDate()) return hoje
-       else dataFormatada
+         else 
+       return dataFormatada
 
     }
 }
