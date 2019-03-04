@@ -36,21 +36,21 @@ class Admin{
                 this._mainStatus.classList.add('scale-in')
                 this._perfil.update(date.user);
 
-                setInterval(()=>{
-                    let update = this.orcamentoLoad();
+                    this._db.ref('orcamentos/').on('child_added',snap =>{
+                        this.add_Lista(snap.val());
+                        this._lista.reverse();
 
-                    if(update.length===this._lista.length){
-                        return;
-                    }
-                    else{
-                        this._lista = [].concat(this.orcamentoLoad());
-                        this._orcamento.update(this._lista)
-                    }
-                    if(update.length==0) {
-                        this._orcamento.update(this._lista)
-                    }
-                    
-                },2000)
+                        this.render(snap.val())
+                        });
+                    this._db.ref('orcamentos/').on('child_changed',snap => {
+                        this.update_Lista(snap.val())
+                        this.render(this._lista)
+
+                        })
+                    this._db.ref('orcamentos/').on('child_removed',snap =>{ 
+                        this.update_Lista(snap.val())
+                        this.render(this._lista)
+                    });
          
             })
             .catch(error=>{
@@ -70,11 +70,26 @@ class Admin{
     }
 
    
-    orcamentoLoad(){
-        let lista = [];
-        this._db.ref('orcamentos/').on('child_added', snapshot=> 
-        lista.push(snapshot.val())); 
+   
+    add_Lista(item){
+        this._lista.push(item);
+        console.log(this._lista)
 
-        return lista.reverse();
-        }
+    }
+
+    update_Lista(item){
+        let lista= []
+        this._lista.map(e=>{
+            if(item.data==e.data) return
+            lista.push(e)
+        })
+        this._lista = lista;
+        console.log(this._lista)
+    }
+
+
+    render(){
+        return this._orcamento.update(this._lista)
+      }
+    
 }
